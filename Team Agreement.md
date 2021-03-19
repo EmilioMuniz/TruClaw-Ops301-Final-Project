@@ -2,15 +2,6 @@
 
 ### Duration and Project Communications:
 
-1. For the week of March 22nd - 26th:
-2. We will meet...
-3.  yo
-  * Project review and daily task update meeting 830 am PST.
-  * Stand-up 9 am PST
-  c. Tea-Time Task Review  
-  d. Stand-up 5 pm PST
-  e. Powerdown 8 pm PST
-3. Slack will be the first line of communication.
-4. Remo will be where we meet for daily meetings and emergent issues.  
-5. Off-hours:
-  a. 9 pm - 830 am PST
+1. first
+2. next
+ 3. yup 
