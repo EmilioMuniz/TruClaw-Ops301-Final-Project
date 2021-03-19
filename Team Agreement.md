@@ -4,7 +4,7 @@
 
 1. For the week of March 22nd - 26th:
 2. We will meet... 
-  a. Project review and daily task update meeting 830 am PST.
+  1. Project review and daily task update meeting 830 am PST.
   b. Stand-up 9 am PST
   c. Tea-Time Task Review  
   d. Stand-up 5 pm PST
