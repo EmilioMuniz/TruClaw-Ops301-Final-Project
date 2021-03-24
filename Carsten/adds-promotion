@@ -1,2 +1,9 @@
+#!/usr/bin/env pwsh
+
+# Title - adds-promotion
+# Author - Carsten Rossen
+# Date Last Revised - 3/24/2021
+# Purpose - Install Active Directory onto server, promote server to Domain Controller, and install DNS roles.
+
 Add-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSForest -DomainName corp.globexpower.com -InstallDNS
