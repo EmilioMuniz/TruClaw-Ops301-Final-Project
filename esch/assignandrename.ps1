@@ -11,7 +11,7 @@ $gateway = "192.168.1.1"
 $DNS = "192.168.1.10"
 $adapter = (Get-NetAdapter).ifIndex
 New-NetIPAddress -IPAddress $ip -Prefixlength $prefix `
--InterfaceIndex $adapter -DefaulGateway -$gateway
+-InterfaceIndex $adapter -DefaultGateway -$gateway
 
 $input Read-Host -Prompt 'Please type in the new name for this computer: '
-Rename-Comptuer -NewName "$input" -restart
+Rename-Computer -NewName "$input" -restart
