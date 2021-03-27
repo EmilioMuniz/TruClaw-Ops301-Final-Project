@@ -10,15 +10,15 @@ $file = "C:\Users\Administrator\Desktop\UsersNames.csv"
 $importedUsers = Import-csv $file
 foreach ($user in $importedUsers)
 {
- $givenName = $user.givenName
- $sn = $user.sn
+    $givenName = $user.givenName
+    $sn = $user.sn
 
- $sAMAccontName = $user.sAMAccountName
+    $sAMAccontName = $user.sAMAccountName
 
- $password = $user.password
- $ou = $user.ou
- $department = $user.department
+    $password = ConvertTo-SecureString $user.password -AsPlainText -Force
+    $ou = $user.ou
+    $department = $user.department
 
- $title = $user.title
- New-ADUser -DisplayName "$givenName" -Surname "$sn" -SamAccountName "$sAMAccontName" -Title "$title"
+    $title = $user.title
+    New-ADUser -DisplayName "$givenName" -Surname "$sn" -SamAccountName "$sAMAccontName" -Title "$title" -Name "$givenName $sn" -Path "$ou" -Enabled 1 -AccountPassword $password
 }
